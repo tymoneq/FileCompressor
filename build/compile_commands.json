@@ -1,0 +1,12 @@
+[
+{
+  "directory": "/home/tymon/coding/FileCompressor/build",
+  "command": "/usr/bin/g++ -DDEBUG   -g -O0 -Wall -Wextra -g -std=gnu++17 -o CMakeFiles/compressor.dir/compressor.cpp.o -c /home/tymon/coding/FileCompressor/compressor.cpp",
+  "file": "/home/tymon/coding/FileCompressor/compressor.cpp"
+},
+{
+  "directory": "/home/tymon/coding/FileCompressor/build",
+  "command": "/usr/bin/g++ -DDEBUG   -g -O0 -Wall -Wextra -g -std=gnu++17 -o CMakeFiles/decompressor.dir/decompress.cpp.o -c /home/tymon/coding/FileCompressor/decompress.cpp",
+  "file": "/home/tymon/coding/FileCompressor/decompress.cpp"
+}
+]

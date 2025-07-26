@@ -1,0 +1,106 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build-debug",
+            "type": "shell",
+            "command": "cmake",
+            "args": [
+                "-DCMAKE_BUILD_TYPE=Debug",
+                "-B",
+                "build",
+                "-S",
+                "."
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": ["$gcc"],
+            "detail": "Configure project with CMake in Debug mode",
+            "dependsOn": "compile-debug"
+        },
+        {
+            "label": "compile-debug",
+            "type": "shell",
+            "command": "cmake",
+            "args": [
+                "--build",
+                "build",
+                "--config",
+                "Debug"
+            ],
+            "group": "build",
+            "problemMatcher": ["$gcc"],
+            "detail": "Build project in Debug mode",
+            "dependsOrder": "sequence"
+        },
+        {
+            "label": "build-release",
+            "type": "shell",
+            "command": "cmake",
+            "args": [
+                "-DCMAKE_BUILD_TYPE=Release",
+                "-B",
+                "build",
+                "-S",
+                "."
+            ],
+            "group": "build",
+            "problemMatcher": ["$gcc"],
+            "detail": "Configure project with CMake in Release mode",
+            "dependsOn": "compile-release"
+        },
+        {
+            "label": "compile-release",
+            "type": "shell",
+            "command": "cmake",
+            "args": [
+                "--build",
+                "build",
+                "--config",
+                "Release"
+            ],
+            "group": "build",
+            "problemMatcher": ["$gcc"],
+            "detail": "Build project in Release mode"
+        },
+        {
+            "label": "clean",
+            "type": "shell",
+            "command": "rm",
+            "args": ["-rf", "build"],
+            "group": "build",
+            "detail": "Clean build directory"
+        },
+        {
+            "label": "run-compressor",
+            "type": "shell",
+            "command": "./build/compressor",
+            "args": ["test.txt"],
+            "group": "test",
+            "detail": "Run the compressor with test.txt",
+            "dependsOn": "build-debug"
+        },
+        {
+            "label": "run-decompressor",
+            "type": "shell",
+            "command": "./build/decompressor",
+            "group": "test",
+            "detail": "Run the decompressor",
+            "dependsOn": "build-debug"
+        },
+        {
+            "label": "run-full-pipeline",
+            "type": "shell",
+            "command": "bash",
+            "args": [
+                "-c",
+                "./build/compressor test.txt && ./build/decompressor && echo 'Pipeline completed successfully!'"
+            ],
+            "group": "test",
+            "detail": "Run compressor followed by decompressor",
+            "dependsOn": "build-debug"
+        }
+    ]
+}

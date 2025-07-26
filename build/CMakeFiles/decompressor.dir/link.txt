@@ -1,0 +1,1 @@
+/usr/bin/g++  -g -O0 -Wall -Wextra -g CMakeFiles/decompressor.dir/decompress.cpp.o -o decompressor 
