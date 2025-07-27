@@ -117,78 +117,65 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named compressor
+# Target rules for targets named myapp
 
 # Build rule for target.
-compressor: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 compressor
-.PHONY : compressor
+myapp: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 myapp
+.PHONY : myapp
 
 # fast build rule for target.
-compressor/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/compressor.dir/build.make CMakeFiles/compressor.dir/build
-.PHONY : compressor/fast
+myapp/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/myapp.dir/build.make CMakeFiles/myapp.dir/build
+.PHONY : myapp/fast
 
-#=============================================================================
-# Target rules for targets named decompressor
-
-# Build rule for target.
-decompressor: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 decompressor
-.PHONY : decompressor
-
-# fast build rule for target.
-decompressor/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/decompressor.dir/build.make CMakeFiles/decompressor.dir/build
-.PHONY : decompressor/fast
-
-compressor.o: compressor.cpp.o
-.PHONY : compressor.o
+main.o: main.cpp.o
+.PHONY : main.o
 
 # target to build an object file
-compressor.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/compressor.dir/build.make CMakeFiles/compressor.dir/compressor.cpp.o
-.PHONY : compressor.cpp.o
+main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/myapp.dir/build.make CMakeFiles/myapp.dir/main.cpp.o
+.PHONY : main.cpp.o
 
-compressor.i: compressor.cpp.i
-.PHONY : compressor.i
+main.i: main.cpp.i
+.PHONY : main.i
 
 # target to preprocess a source file
-compressor.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/compressor.dir/build.make CMakeFiles/compressor.dir/compressor.cpp.i
-.PHONY : compressor.cpp.i
+main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/myapp.dir/build.make CMakeFiles/myapp.dir/main.cpp.i
+.PHONY : main.cpp.i
 
-compressor.s: compressor.cpp.s
-.PHONY : compressor.s
+main.s: main.cpp.s
+.PHONY : main.s
 
 # target to generate assembly for a file
-compressor.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/compressor.dir/build.make CMakeFiles/compressor.dir/compressor.cpp.s
-.PHONY : compressor.cpp.s
+main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/myapp.dir/build.make CMakeFiles/myapp.dir/main.cpp.s
+.PHONY : main.cpp.s
 
-decompress.o: decompress.cpp.o
-.PHONY : decompress.o
+src/Huffman.o: src/Huffman.cpp.o
+.PHONY : src/Huffman.o
 
 # target to build an object file
-decompress.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/decompressor.dir/build.make CMakeFiles/decompressor.dir/decompress.cpp.o
-.PHONY : decompress.cpp.o
+src/Huffman.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/myapp.dir/build.make CMakeFiles/myapp.dir/src/Huffman.cpp.o
+.PHONY : src/Huffman.cpp.o
 
-decompress.i: decompress.cpp.i
-.PHONY : decompress.i
+src/Huffman.i: src/Huffman.cpp.i
+.PHONY : src/Huffman.i
 
 # target to preprocess a source file
-decompress.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/decompressor.dir/build.make CMakeFiles/decompressor.dir/decompress.cpp.i
-.PHONY : decompress.cpp.i
+src/Huffman.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/myapp.dir/build.make CMakeFiles/myapp.dir/src/Huffman.cpp.i
+.PHONY : src/Huffman.cpp.i
 
-decompress.s: decompress.cpp.s
-.PHONY : decompress.s
+src/Huffman.s: src/Huffman.cpp.s
+.PHONY : src/Huffman.s
 
 # target to generate assembly for a file
-decompress.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/decompressor.dir/build.make CMakeFiles/decompressor.dir/decompress.cpp.s
-.PHONY : decompress.cpp.s
+src/Huffman.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/myapp.dir/build.make CMakeFiles/myapp.dir/src/Huffman.cpp.s
+.PHONY : src/Huffman.cpp.s
 
 # Help Target
 help:
@@ -198,14 +185,13 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... compressor"
-	@echo "... decompressor"
-	@echo "... compressor.o"
-	@echo "... compressor.i"
-	@echo "... compressor.s"
-	@echo "... decompress.o"
-	@echo "... decompress.i"
-	@echo "... decompress.s"
+	@echo "... myapp"
+	@echo "... main.o"
+	@echo "... main.i"
+	@echo "... main.s"
+	@echo "... src/Huffman.o"
+	@echo "... src/Huffman.i"
+	@echo "... src/Huffman.s"
 .PHONY : help
 
 

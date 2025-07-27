@@ -6,5 +6,5 @@ CXX_DEFINES = -DDEBUG
 
 CXX_INCLUDES = -I/home/tymon/coding/FileCompressor/include
 
-CXX_FLAGS =  -g -O0 -Wall -g -std=gnu++17
+CXX_FLAGS =  -g -O0 -Wall -Wextra -g -std=gnu++17
 

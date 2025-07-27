@@ -43,6 +43,5 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/compressor.dir/DependInfo.cmake"
-  "CMakeFiles/decompressor.dir/DependInfo.cmake"
+  "CMakeFiles/myapp.dir/DependInfo.cmake"
   )

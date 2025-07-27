@@ -18,8 +18,7 @@ elseif(CMAKE_BUILD_TYPE STREQUAL "Release")
 endif()
 
 # Build compressor executable
-add_executable(compressor compressor.cpp)
+add_executable(myapp main.cpp src/Huffman.cpp )
 
-# Build decompressor executable  
-add_executable(decompressor decompress.cpp)
 
+target_include_directories(myapp PRIVATE include)

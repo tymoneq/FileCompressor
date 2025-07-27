@@ -74,6 +74,14 @@
             "detail": "Clean build directory"
         },
         {
+            "label": "run-main-app",
+            "type": "shell",
+            "command": "./build/myapp",
+            "group": "test",
+            "detail": "Run the main Huffman application",
+            "dependsOn": "build-debug"
+        },
+        {
             "label": "run-compressor",
             "type": "shell",
             "command": "./build/compressor",
