@@ -69,28 +69,28 @@ include CMakeFiles/compressor.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/compressor.dir/flags.make
 
-CMakeFiles/compressor.dir/compressor.cpp.o: CMakeFiles/compressor.dir/flags.make
-CMakeFiles/compressor.dir/compressor.cpp.o: ../compressor.cpp
-CMakeFiles/compressor.dir/compressor.cpp.o: CMakeFiles/compressor.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tymon/coding/FileCompressor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/compressor.dir/compressor.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/compressor.dir/compressor.cpp.o -MF CMakeFiles/compressor.dir/compressor.cpp.o.d -o CMakeFiles/compressor.dir/compressor.cpp.o -c /home/tymon/coding/FileCompressor/compressor.cpp
+CMakeFiles/compressor.dir/simpleCompressor/compressor.cpp.o: CMakeFiles/compressor.dir/flags.make
+CMakeFiles/compressor.dir/simpleCompressor/compressor.cpp.o: ../simpleCompressor/compressor.cpp
+CMakeFiles/compressor.dir/simpleCompressor/compressor.cpp.o: CMakeFiles/compressor.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tymon/coding/FileCompressor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/compressor.dir/simpleCompressor/compressor.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/compressor.dir/simpleCompressor/compressor.cpp.o -MF CMakeFiles/compressor.dir/simpleCompressor/compressor.cpp.o.d -o CMakeFiles/compressor.dir/simpleCompressor/compressor.cpp.o -c /home/tymon/coding/FileCompressor/simpleCompressor/compressor.cpp
 
-CMakeFiles/compressor.dir/compressor.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/compressor.dir/compressor.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tymon/coding/FileCompressor/compressor.cpp > CMakeFiles/compressor.dir/compressor.cpp.i
+CMakeFiles/compressor.dir/simpleCompressor/compressor.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/compressor.dir/simpleCompressor/compressor.cpp.i"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tymon/coding/FileCompressor/simpleCompressor/compressor.cpp > CMakeFiles/compressor.dir/simpleCompressor/compressor.cpp.i
 
-CMakeFiles/compressor.dir/compressor.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/compressor.dir/compressor.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tymon/coding/FileCompressor/compressor.cpp -o CMakeFiles/compressor.dir/compressor.cpp.s
+CMakeFiles/compressor.dir/simpleCompressor/compressor.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/compressor.dir/simpleCompressor/compressor.cpp.s"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tymon/coding/FileCompressor/simpleCompressor/compressor.cpp -o CMakeFiles/compressor.dir/simpleCompressor/compressor.cpp.s
 
 # Object files for target compressor
 compressor_OBJECTS = \
-"CMakeFiles/compressor.dir/compressor.cpp.o"
+"CMakeFiles/compressor.dir/simpleCompressor/compressor.cpp.o"
 
 # External object files for target compressor
 compressor_EXTERNAL_OBJECTS =
 
-compressor: CMakeFiles/compressor.dir/compressor.cpp.o
+compressor: CMakeFiles/compressor.dir/simpleCompressor/compressor.cpp.o
 compressor: CMakeFiles/compressor.dir/build.make
 compressor: CMakeFiles/compressor.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/tymon/coding/FileCompressor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable compressor"

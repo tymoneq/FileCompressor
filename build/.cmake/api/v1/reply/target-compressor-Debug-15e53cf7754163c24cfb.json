@@ -2,7 +2,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "myapp"
+			"path" : "compressor"
 		}
 	],
 	"backtrace" : 1,
@@ -11,8 +11,7 @@
 		"commands" : 
 		[
 			"add_executable",
-			"add_definitions",
-			"target_include_directories"
+			"add_definitions"
 		],
 		"files" : 
 		[
@@ -26,19 +25,13 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 21,
+				"line" : 38,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 14,
-				"parent" : 0
-			},
-			{
-				"command" : 2,
-				"file" : 0,
-				"line" : 24,
+				"line" : 17,
 				"parent" : 0
 			}
 		]
@@ -62,13 +55,6 @@
 					"define" : "DEBUG"
 				}
 			],
-			"includes" : 
-			[
-				{
-					"backtrace" : 3,
-					"path" : "/home/tymon/coding/FileCompressor/include"
-				}
-			],
 			"language" : "CXX",
 			"languageStandard" : 
 			{
@@ -80,12 +66,11 @@
 			},
 			"sourceIndexes" : 
 			[
-				0,
-				1
+				0
 			]
 		}
 	],
-	"id" : "myapp::@6890427a1f51a3e7e1df",
+	"id" : "compressor::@6890427a1f51a3e7e1df",
 	"link" : 
 	{
 		"commandFragments" : 
@@ -101,8 +86,8 @@
 		],
 		"language" : "CXX"
 	},
-	"name" : "myapp",
-	"nameOnDisk" : "myapp",
+	"name" : "compressor",
+	"nameOnDisk" : "compressor",
 	"paths" : 
 	{
 		"build" : ".",
@@ -114,8 +99,7 @@
 			"name" : "Source Files",
 			"sourceIndexes" : 
 			[
-				0,
-				1
+				0
 			]
 		}
 	],
@@ -124,13 +108,7 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "main.cpp",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 1,
-			"compileGroupIndex" : 0,
-			"path" : "src/Huffman.cpp",
+			"path" : "simpleCompressor/compressor.cpp",
 			"sourceGroupIndex" : 0
 		}
 	],

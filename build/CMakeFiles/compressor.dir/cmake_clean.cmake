@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/compressor.dir/compressor.cpp.o"
-  "CMakeFiles/compressor.dir/compressor.cpp.o.d"
+  "CMakeFiles/compressor.dir/simpleCompressor/compressor.cpp.o"
+  "CMakeFiles/compressor.dir/simpleCompressor/compressor.cpp.o.d"
   "compressor"
   "compressor.pdb"
 )

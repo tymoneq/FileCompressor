@@ -1,1 +1,1 @@
-/usr/bin/g++  -g -O0 -Wall -Wextra -g CMakeFiles/compressor.dir/compressor.cpp.o -o compressor 
+/usr/bin/g++  -g -O0 -Wall -Wextra -g CMakeFiles/compressor.dir/simpleCompressor/compressor.cpp.o -o compressor 

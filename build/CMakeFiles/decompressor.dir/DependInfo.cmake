@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/tymon/coding/FileCompressor/decompress.cpp" "CMakeFiles/decompressor.dir/decompress.cpp.o" "gcc" "CMakeFiles/decompressor.dir/decompress.cpp.o.d"
+  "/home/tymon/coding/FileCompressor/simpleCompressor/decompress.cpp" "CMakeFiles/decompressor.dir/simpleCompressor/decompress.cpp.o" "gcc" "CMakeFiles/decompressor.dir/simpleCompressor/decompress.cpp.o.d"
   )
 
 # Targets to which this target links.

@@ -15,7 +15,9 @@
 					"source" : ".",
 					"targetIndexes" : 
 					[
-						0
+						0,
+						1,
+						2
 					]
 				}
 			],
@@ -30,7 +32,9 @@
 					"name" : "FileCompressor",
 					"targetIndexes" : 
 					[
-						0
+						0,
+						1,
+						2
 					]
 				}
 			],
@@ -38,8 +42,22 @@
 			[
 				{
 					"directoryIndex" : 0,
+					"id" : "compressor::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-compressor-Debug-15e53cf7754163c24cfb.json",
+					"name" : "compressor",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "decompressor::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-decompressor-Debug-1f445a2f8e1050c15c52.json",
+					"name" : "decompressor",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
 					"id" : "myapp::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-myapp-Debug-12d93ca3e8b2aa367b38.json",
+					"jsonFile" : "target-myapp-Debug-cf27f2b37ed53ca404b1.json",
 					"name" : "myapp",
 					"projectIndex" : 0
 				}

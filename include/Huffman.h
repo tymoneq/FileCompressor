@@ -1,6 +1,8 @@
 #ifndef HUFFMAN
 #define HUFFMAN
 
+#include <boost/dynamic_bitset.hpp>
+#include <map>
 #include <queue>
 #include <string>
 using namespace std;
@@ -23,10 +25,15 @@ class HuffmanTree {
     HuffmanTree();
     ~HuffmanTree();
     void createHuffmanTree(const string& fileName);
+    void createKeys(Node* currentNode);
+    void dfs(Node* currentNode, bool val);
+    void writeToBinary(const string& fileName);
 
    private:
     priority_queue<Node*, vector<Node*>, NodeComparator> pq;
     Node* root;
+    boost::dynamic_bitset<> bitset;
+    map<char, boost::dynamic_bitset<>> key;
 };
 
 #endif

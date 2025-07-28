@@ -1,3 +1,5 @@
 /home/tymon/coding/FileCompressor/build/CMakeFiles/myapp.dir
+/home/tymon/coding/FileCompressor/build/CMakeFiles/compressor.dir
+/home/tymon/coding/FileCompressor/build/CMakeFiles/decompressor.dir
 /home/tymon/coding/FileCompressor/build/CMakeFiles/edit_cache.dir
 /home/tymon/coding/FileCompressor/build/CMakeFiles/rebuild_cache.dir

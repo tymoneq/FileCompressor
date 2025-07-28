@@ -69,28 +69,28 @@ include CMakeFiles/decompressor.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/decompressor.dir/flags.make
 
-CMakeFiles/decompressor.dir/decompress.cpp.o: CMakeFiles/decompressor.dir/flags.make
-CMakeFiles/decompressor.dir/decompress.cpp.o: ../decompress.cpp
-CMakeFiles/decompressor.dir/decompress.cpp.o: CMakeFiles/decompressor.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tymon/coding/FileCompressor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/decompressor.dir/decompress.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/decompressor.dir/decompress.cpp.o -MF CMakeFiles/decompressor.dir/decompress.cpp.o.d -o CMakeFiles/decompressor.dir/decompress.cpp.o -c /home/tymon/coding/FileCompressor/decompress.cpp
+CMakeFiles/decompressor.dir/simpleCompressor/decompress.cpp.o: CMakeFiles/decompressor.dir/flags.make
+CMakeFiles/decompressor.dir/simpleCompressor/decompress.cpp.o: ../simpleCompressor/decompress.cpp
+CMakeFiles/decompressor.dir/simpleCompressor/decompress.cpp.o: CMakeFiles/decompressor.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tymon/coding/FileCompressor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/decompressor.dir/simpleCompressor/decompress.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/decompressor.dir/simpleCompressor/decompress.cpp.o -MF CMakeFiles/decompressor.dir/simpleCompressor/decompress.cpp.o.d -o CMakeFiles/decompressor.dir/simpleCompressor/decompress.cpp.o -c /home/tymon/coding/FileCompressor/simpleCompressor/decompress.cpp
 
-CMakeFiles/decompressor.dir/decompress.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/decompressor.dir/decompress.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tymon/coding/FileCompressor/decompress.cpp > CMakeFiles/decompressor.dir/decompress.cpp.i
+CMakeFiles/decompressor.dir/simpleCompressor/decompress.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/decompressor.dir/simpleCompressor/decompress.cpp.i"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tymon/coding/FileCompressor/simpleCompressor/decompress.cpp > CMakeFiles/decompressor.dir/simpleCompressor/decompress.cpp.i
 
-CMakeFiles/decompressor.dir/decompress.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/decompressor.dir/decompress.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tymon/coding/FileCompressor/decompress.cpp -o CMakeFiles/decompressor.dir/decompress.cpp.s
+CMakeFiles/decompressor.dir/simpleCompressor/decompress.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/decompressor.dir/simpleCompressor/decompress.cpp.s"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tymon/coding/FileCompressor/simpleCompressor/decompress.cpp -o CMakeFiles/decompressor.dir/simpleCompressor/decompress.cpp.s
 
 # Object files for target decompressor
 decompressor_OBJECTS = \
-"CMakeFiles/decompressor.dir/decompress.cpp.o"
+"CMakeFiles/decompressor.dir/simpleCompressor/decompress.cpp.o"
 
 # External object files for target decompressor
 decompressor_EXTERNAL_OBJECTS =
 
-decompressor: CMakeFiles/decompressor.dir/decompress.cpp.o
+decompressor: CMakeFiles/decompressor.dir/simpleCompressor/decompress.cpp.o
 decompressor: CMakeFiles/decompressor.dir/build.make
 decompressor: CMakeFiles/decompressor.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/tymon/coding/FileCompressor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable decompressor"

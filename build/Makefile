@@ -129,6 +129,32 @@ myapp/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/myapp.dir/build.make CMakeFiles/myapp.dir/build
 .PHONY : myapp/fast
 
+#=============================================================================
+# Target rules for targets named compressor
+
+# Build rule for target.
+compressor: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 compressor
+.PHONY : compressor
+
+# fast build rule for target.
+compressor/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/compressor.dir/build.make CMakeFiles/compressor.dir/build
+.PHONY : compressor/fast
+
+#=============================================================================
+# Target rules for targets named decompressor
+
+# Build rule for target.
+decompressor: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 decompressor
+.PHONY : decompressor
+
+# fast build rule for target.
+decompressor/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/decompressor.dir/build.make CMakeFiles/decompressor.dir/build
+.PHONY : decompressor/fast
+
 main.o: main.cpp.o
 .PHONY : main.o
 
@@ -152,6 +178,54 @@ main.s: main.cpp.s
 main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/myapp.dir/build.make CMakeFiles/myapp.dir/main.cpp.s
 .PHONY : main.cpp.s
+
+simpleCompressor/compressor.o: simpleCompressor/compressor.cpp.o
+.PHONY : simpleCompressor/compressor.o
+
+# target to build an object file
+simpleCompressor/compressor.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/compressor.dir/build.make CMakeFiles/compressor.dir/simpleCompressor/compressor.cpp.o
+.PHONY : simpleCompressor/compressor.cpp.o
+
+simpleCompressor/compressor.i: simpleCompressor/compressor.cpp.i
+.PHONY : simpleCompressor/compressor.i
+
+# target to preprocess a source file
+simpleCompressor/compressor.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/compressor.dir/build.make CMakeFiles/compressor.dir/simpleCompressor/compressor.cpp.i
+.PHONY : simpleCompressor/compressor.cpp.i
+
+simpleCompressor/compressor.s: simpleCompressor/compressor.cpp.s
+.PHONY : simpleCompressor/compressor.s
+
+# target to generate assembly for a file
+simpleCompressor/compressor.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/compressor.dir/build.make CMakeFiles/compressor.dir/simpleCompressor/compressor.cpp.s
+.PHONY : simpleCompressor/compressor.cpp.s
+
+simpleCompressor/decompress.o: simpleCompressor/decompress.cpp.o
+.PHONY : simpleCompressor/decompress.o
+
+# target to build an object file
+simpleCompressor/decompress.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/decompressor.dir/build.make CMakeFiles/decompressor.dir/simpleCompressor/decompress.cpp.o
+.PHONY : simpleCompressor/decompress.cpp.o
+
+simpleCompressor/decompress.i: simpleCompressor/decompress.cpp.i
+.PHONY : simpleCompressor/decompress.i
+
+# target to preprocess a source file
+simpleCompressor/decompress.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/decompressor.dir/build.make CMakeFiles/decompressor.dir/simpleCompressor/decompress.cpp.i
+.PHONY : simpleCompressor/decompress.cpp.i
+
+simpleCompressor/decompress.s: simpleCompressor/decompress.cpp.s
+.PHONY : simpleCompressor/decompress.s
+
+# target to generate assembly for a file
+simpleCompressor/decompress.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/decompressor.dir/build.make CMakeFiles/decompressor.dir/simpleCompressor/decompress.cpp.s
+.PHONY : simpleCompressor/decompress.cpp.s
 
 src/Huffman.o: src/Huffman.cpp.o
 .PHONY : src/Huffman.o
@@ -185,10 +259,18 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... compressor"
+	@echo "... decompressor"
 	@echo "... myapp"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... simpleCompressor/compressor.o"
+	@echo "... simpleCompressor/compressor.i"
+	@echo "... simpleCompressor/compressor.s"
+	@echo "... simpleCompressor/decompress.o"
+	@echo "... simpleCompressor/decompress.i"
+	@echo "... simpleCompressor/decompress.s"
 	@echo "... src/Huffman.o"
 	@echo "... src/Huffman.i"
 	@echo "... src/Huffman.s"
