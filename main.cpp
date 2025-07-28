@@ -8,9 +8,7 @@ using namespace std;
 int main() {
     string fileName = "test.txt";
 
-    HuffmanTree huffmanTree;
-
-    huffmanTree.createHuffmanTree(fileName);
+    HuffmanTree huffmanTree(fileName);
 
     return 0;
 }

@@ -1,1 +1,1 @@
-/usr/bin/g++  -g -O0 -Wall -Wextra -g CMakeFiles/myapp.dir/main.cpp.o CMakeFiles/myapp.dir/src/Huffman.cpp.o -o myapp 
+/usr/bin/c++  -g -O0 -Wall -Wextra -g CMakeFiles/myapp.dir/main.cpp.o CMakeFiles/myapp.dir/src/Huffman.cpp.o -o myapp 

@@ -5,6 +5,7 @@
 #include <map>
 #include <queue>
 #include <string>
+#include <unordered_map>
 using namespace std;
 
 struct Node {
@@ -21,19 +22,22 @@ struct NodeComparator {
 };
 
 class HuffmanTree {
+   private:
+    priority_queue<Node*, vector<Node*>, NodeComparator> pq;
+    Node* root;
+    string bitSet;
+    unordered_map<char, string> key;
+
    public:
-    HuffmanTree();
+    HuffmanTree(const string& fileName);
     ~HuffmanTree();
     void createHuffmanTree(const string& fileName);
     void createKeys(Node* currentNode);
     void dfs(Node* currentNode, bool val);
     void writeToBinary(const string& fileName);
-
-   private:
-    priority_queue<Node*, vector<Node*>, NodeComparator> pq;
-    Node* root;
-    boost::dynamic_bitset<> bitset;
-    map<char, boost::dynamic_bitset<>> key;
+    void writeHuffmanToBinary();
+    void createBinary(const string& fileName, const string& bitString);
+    vector<uint8_t> toBytes(int& bitCount, const string& bitString);
 };
 
 #endif
