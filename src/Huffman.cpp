@@ -8,7 +8,6 @@
 #include <queue>
 #include <string>
 #include <unordered_map>
-
 using namespace std;
 
 Node* createNode(const char& character, const unsigned int& value, Node* leftSon, Node* rightSon) {
@@ -37,6 +36,8 @@ void HuffmanTree::createHuffmanTree(const string& fileName) {
     while (getline(file, row)) {
         for (const char& c : row)
             if (c > 0) frequency[c]++;
+
+        frequency['\n']++;
     }
     file.close();
 
@@ -61,7 +62,7 @@ void HuffmanTree::createHuffmanTree(const string& fileName) {
     createKeys(root);
 }
 
-void HuffmanTree::dfs(Node* currentNode, bool val) {
+void HuffmanTree::dfs(Node* currentNode, char val) {
     bitSet.push_back(val);
     createKeys(currentNode);
     bitSet.pop_back();
@@ -72,9 +73,9 @@ void HuffmanTree::createKeys(Node* currentNode) {
     if (currentNode->leftSon == nullptr && currentNode->rightSon == nullptr)
         this->key[currentNode->encodedChar] = this->bitSet;
 
-    if (currentNode->leftSon != nullptr) dfs(currentNode->leftSon, 0);
+    if (currentNode->leftSon != nullptr) dfs(currentNode->leftSon, '0');
 
-    if (currentNode->rightSon != nullptr) dfs(currentNode->rightSon, 1);
+    if (currentNode->rightSon != nullptr) dfs(currentNode->rightSon, '1');
 }
 void HuffmanTree::writeToBinary(const string& fileName) {
     string row;
@@ -82,24 +83,38 @@ void HuffmanTree::writeToBinary(const string& fileName) {
 
     string bitString = "";
 
-    while (getline(file, row))
+    while (getline(file, row)) {
         for (const char& c : row)
-            if (c > 0 && key.find(c) != key.end()) bitString.append(key[c]);
+            if (c > 0 && this->key.find(c) != this->key.end()) bitString.append(this->key[c]);
 
+        if (this->key.find('\n') != this->key.end()) bitString.append(this->key['\n']);
+    }
     file.close();
 
     // converting bits to bytes
     createBinary("compressed.bin", bitString);
 }
 void HuffmanTree::writeHuffmanToBinary() {
-    string bitString = "";
+    ofstream outFile("huffman.bin", ios::binary);
+
+    // Write the number of key-value pairs first
+    size_t keyCount = key.size();
+    outFile.write(reinterpret_cast<const char*>(&keyCount), sizeof(keyCount));
 
     for (const auto& el : this->key) {
-        bitString.append(el.second);
-        bitset<8> binary(el.first);
-        bitString.append(binary.to_string());
+        // Write the character
+        char character = el.first;
+        outFile.write(&character, sizeof(character));
+
+        // Write the length of the Huffman code
+        size_t codeLength = el.second.length();
+        outFile.write(reinterpret_cast<const char*>(&codeLength), sizeof(codeLength));
+
+        // Write the Huffman code as string
+        outFile.write(el.second.c_str(), codeLength);
     }
-    createBinary("huffman.bin", bitString);
+
+    outFile.close();
 }
 void HuffmanTree::createBinary(const string& fileName, const string& bitString) {
     int bitCount = 0;

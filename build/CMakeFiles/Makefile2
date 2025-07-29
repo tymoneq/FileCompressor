@@ -64,8 +64,6 @@ CMAKE_BINARY_DIR = /home/tymon/coding/FileCompressor/build
 
 # The main recursive "all" target.
 all: CMakeFiles/myapp.dir/all
-all: CMakeFiles/compressor.dir/all
-all: CMakeFiles/decompressor.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -74,8 +72,6 @@ preinstall:
 
 # The main recursive "clean" target.
 clean: CMakeFiles/myapp.dir/clean
-clean: CMakeFiles/compressor.dir/clean
-clean: CMakeFiles/decompressor.dir/clean
 .PHONY : clean
 
 #=============================================================================
@@ -85,12 +81,12 @@ clean: CMakeFiles/decompressor.dir/clean
 CMakeFiles/myapp.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/myapp.dir/build.make CMakeFiles/myapp.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/myapp.dir/build.make CMakeFiles/myapp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tymon/coding/FileCompressor/build/CMakeFiles --progress-num=5,6,7 "Built target myapp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tymon/coding/FileCompressor/build/CMakeFiles --progress-num=1,2,3,4 "Built target myapp"
 .PHONY : CMakeFiles/myapp.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/myapp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/tymon/coding/FileCompressor/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/tymon/coding/FileCompressor/build/CMakeFiles 4
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/myapp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/tymon/coding/FileCompressor/build/CMakeFiles 0
 .PHONY : CMakeFiles/myapp.dir/rule
@@ -103,58 +99,6 @@ myapp: CMakeFiles/myapp.dir/rule
 CMakeFiles/myapp.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/myapp.dir/build.make CMakeFiles/myapp.dir/clean
 .PHONY : CMakeFiles/myapp.dir/clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/compressor.dir
-
-# All Build rule for target.
-CMakeFiles/compressor.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/compressor.dir/build.make CMakeFiles/compressor.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/compressor.dir/build.make CMakeFiles/compressor.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tymon/coding/FileCompressor/build/CMakeFiles --progress-num=1,2 "Built target compressor"
-.PHONY : CMakeFiles/compressor.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/compressor.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/tymon/coding/FileCompressor/build/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/compressor.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/tymon/coding/FileCompressor/build/CMakeFiles 0
-.PHONY : CMakeFiles/compressor.dir/rule
-
-# Convenience name for target.
-compressor: CMakeFiles/compressor.dir/rule
-.PHONY : compressor
-
-# clean rule for target.
-CMakeFiles/compressor.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/compressor.dir/build.make CMakeFiles/compressor.dir/clean
-.PHONY : CMakeFiles/compressor.dir/clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/decompressor.dir
-
-# All Build rule for target.
-CMakeFiles/decompressor.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/decompressor.dir/build.make CMakeFiles/decompressor.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/decompressor.dir/build.make CMakeFiles/decompressor.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tymon/coding/FileCompressor/build/CMakeFiles --progress-num=3,4 "Built target decompressor"
-.PHONY : CMakeFiles/decompressor.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/decompressor.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/tymon/coding/FileCompressor/build/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/decompressor.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/tymon/coding/FileCompressor/build/CMakeFiles 0
-.PHONY : CMakeFiles/decompressor.dir/rule
-
-# Convenience name for target.
-decompressor: CMakeFiles/decompressor.dir/rule
-.PHONY : decompressor
-
-# clean rule for target.
-CMakeFiles/decompressor.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/decompressor.dir/build.make CMakeFiles/decompressor.dir/clean
-.PHONY : CMakeFiles/decompressor.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

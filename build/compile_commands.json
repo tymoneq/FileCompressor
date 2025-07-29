@@ -1,0 +1,17 @@
+[
+{
+  "directory": "/home/tymon/coding/FileCompressor/build",
+  "command": "/usr/bin/g++ -DDEBUG -I/home/tymon/coding/FileCompressor/include  -g -O0 -Wall -Wextra -g -std=gnu++17 -o CMakeFiles/myapp.dir/main.cpp.o -c /home/tymon/coding/FileCompressor/main.cpp",
+  "file": "/home/tymon/coding/FileCompressor/main.cpp"
+},
+{
+  "directory": "/home/tymon/coding/FileCompressor/build",
+  "command": "/usr/bin/g++ -DDEBUG -I/home/tymon/coding/FileCompressor/include  -g -O0 -Wall -Wextra -g -std=gnu++17 -o CMakeFiles/myapp.dir/src/Huffman.cpp.o -c /home/tymon/coding/FileCompressor/src/Huffman.cpp",
+  "file": "/home/tymon/coding/FileCompressor/src/Huffman.cpp"
+},
+{
+  "directory": "/home/tymon/coding/FileCompressor/build",
+  "command": "/usr/bin/g++ -DDEBUG -I/home/tymon/coding/FileCompressor/include  -g -O0 -Wall -Wextra -g -std=gnu++17 -o CMakeFiles/myapp.dir/src/Decompressor.cpp.o -c /home/tymon/coding/FileCompressor/src/Decompressor.cpp",
+  "file": "/home/tymon/coding/FileCompressor/src/Decompressor.cpp"
+}
+]

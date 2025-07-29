@@ -73,15 +73,15 @@ CMakeFiles/decompressor.dir/simpleCompressor/decompress.cpp.o: CMakeFiles/decomp
 CMakeFiles/decompressor.dir/simpleCompressor/decompress.cpp.o: ../simpleCompressor/decompress.cpp
 CMakeFiles/decompressor.dir/simpleCompressor/decompress.cpp.o: CMakeFiles/decompressor.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tymon/coding/FileCompressor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/decompressor.dir/simpleCompressor/decompress.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/decompressor.dir/simpleCompressor/decompress.cpp.o -MF CMakeFiles/decompressor.dir/simpleCompressor/decompress.cpp.o.d -o CMakeFiles/decompressor.dir/simpleCompressor/decompress.cpp.o -c /home/tymon/coding/FileCompressor/simpleCompressor/decompress.cpp
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/decompressor.dir/simpleCompressor/decompress.cpp.o -MF CMakeFiles/decompressor.dir/simpleCompressor/decompress.cpp.o.d -o CMakeFiles/decompressor.dir/simpleCompressor/decompress.cpp.o -c /home/tymon/coding/FileCompressor/simpleCompressor/decompress.cpp
 
 CMakeFiles/decompressor.dir/simpleCompressor/decompress.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/decompressor.dir/simpleCompressor/decompress.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tymon/coding/FileCompressor/simpleCompressor/decompress.cpp > CMakeFiles/decompressor.dir/simpleCompressor/decompress.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tymon/coding/FileCompressor/simpleCompressor/decompress.cpp > CMakeFiles/decompressor.dir/simpleCompressor/decompress.cpp.i
 
 CMakeFiles/decompressor.dir/simpleCompressor/decompress.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/decompressor.dir/simpleCompressor/decompress.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tymon/coding/FileCompressor/simpleCompressor/decompress.cpp -o CMakeFiles/decompressor.dir/simpleCompressor/decompress.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tymon/coding/FileCompressor/simpleCompressor/decompress.cpp -o CMakeFiles/decompressor.dir/simpleCompressor/decompress.cpp.s
 
 # Object files for target decompressor
 decompressor_OBJECTS = \

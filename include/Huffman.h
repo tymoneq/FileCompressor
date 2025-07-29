@@ -1,7 +1,6 @@
 #ifndef HUFFMAN
 #define HUFFMAN
 
-#include <boost/dynamic_bitset.hpp>
 #include <map>
 #include <queue>
 #include <string>
@@ -33,7 +32,7 @@ class HuffmanTree {
     ~HuffmanTree();
     void createHuffmanTree(const string& fileName);
     void createKeys(Node* currentNode);
-    void dfs(Node* currentNode, bool val);
+    void dfs(Node* currentNode, char val);
     void writeToBinary(const string& fileName);
     void writeHuffmanToBinary();
     void createBinary(const string& fileName, const string& bitString);
