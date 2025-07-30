@@ -25,7 +25,25 @@ HuffmanTree::HuffmanTree(const string& fileName) {
     writeHuffmanToBinary();
 }
 
-HuffmanTree::~HuffmanTree() {}
+HuffmanTree::~HuffmanTree() {
+    if (root == nullptr) return;
+
+    queue<Node*> q;
+    q.push(this->root);
+
+    while (!q.empty()) {
+        auto v = q.front();
+        q.pop();
+
+        if (v->leftSon != nullptr) q.push(v->leftSon);
+
+        if (v->rightSon != nullptr) q.push(v->rightSon);
+
+        delete v;
+    }
+
+    this->root = nullptr;
+}
 
 void HuffmanTree::createHuffmanTree(const string& fileName) {
     ifstream file(fileName);
